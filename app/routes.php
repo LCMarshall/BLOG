@@ -11,7 +11,30 @@
 |
 */
 
+// Route::get('/', function($name)
+// {
+
+// if ($name == "resume")
+//     {
+//         return Redirect::to('blog.dev/resume');
+//     }
+//     else
+//     {
+//         return "Hello, $name!";
+//     }
+//  });   
+
+Route::get('/resume', function()
+{
+	return "This is my resume"; 
+});
+
+Route::get('/portfolio', function()
+{
+	return "This is my portfolio"; 
+});
+
 Route::get('/', function()
 {
-	return View::make('hello');
+	return "This is my home"; 
 });
