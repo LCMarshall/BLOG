@@ -11,19 +11,6 @@
 |
 */
 
-// Route::get('/', function($name)
-// {
-
-// if ($name == "resume")
-//     {
-//         return Redirect::to('blog.dev/resume');
-//     }
-//     else
-//     {
-//         return "Hello, $name!";
-//     }
-//  });   
-
 Route::get('/resume', function()
 {
 	return "This is my resume"; 
@@ -36,5 +23,37 @@ Route::get('/portfolio', function()
 
 Route::get('/', function()
 {
-	return "This is my home"; 
+	return View::make("temp.my-first-view"); 
 });
+
+Route::get('/sayhello/{name}', function($name)
+{
+    if ($name == "Chris")
+    {
+        return Redirect::to('/');
+    }
+    else
+    {
+        return View::make('temp.my-first-view')->with('name', $name);
+    }
+});
+
+Route::get('/roll-dice/{guess}', function($guess)
+{
+	$randnumber = rand (1, 6); 
+	$array = array('number'=>$randnumber,
+					'guess'=>$guess);
+	return View::make('temp.roll-dice')->with($array);
+});
+
+
+
+
+
+
+
+
+
+
+
+
