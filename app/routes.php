@@ -10,41 +10,38 @@
 | and give it the Closure to execute when that URI is requested.
 |
 */
+Route::get('/', 'HomeController@showWelcome');
 
-Route::get('/resume', function()
-{
-	return "This is my resume"; 
-});
+Route::resource('posts', 'PostsController');
 
-Route::get('/portfolio', function()
-{
-	return "This is my portfolio"; 
-});
+Route::get('resume', 'HomeController@showResume');
+Route::get('portfolio', 'HomeController@showPortfolio');
 
-Route::get('/', function()
-{
-	return View::make("temp.my-first-view"); 
-});
+// 
+// Route::get('/resume', function()
+// {
+// 	return View::make("resume"); 
+// });
 
-Route::get('/sayhello/{name}', function($name)
-{
-    if ($name == "Chris")
-    {
-        return Redirect::to('/');
-    }
-    else
-    {
-        return View::make('temp.my-first-view')->with('name', $name);
-    }
-});
+// Route::get('/portfolio', function()
+// {
+// 	return View::make("portfolio"); 
+// });
 
-Route::get('/roll-dice/{guess}', function($guess)
-{
-	$randnumber = rand (1, 6); 
-	$array = array('number'=>$randnumber,
-					'guess'=>$guess);
-	return View::make('temp.roll-dice')->with($array);
-});
+// Route::get('/', function()
+// {
+// 	return View::make("temp.my-first-view"); 
+// });
+
+Route::get('/sayhello/{name}', 'HomeController@sayHello');
+
+// Route::get('/roll-dice/{guess}', function($guess)
+// {
+// 	$randnumber = rand (1, 6); 
+// 	$array = array('number'=>$randnumber,
+// 					'guess'=>$guess);
+// 	return View::make('temp.roll-dice')->with($array);
+// });
 
 
 
