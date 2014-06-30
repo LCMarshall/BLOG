@@ -17,7 +17,30 @@ class HomeController extends BaseController {
 
 	public function showWelcome()
 	{
-		return View::make('hello');
+		return Redirect::action("HomeController@sayHello", ['Codeup']);
+	}
+
+	public function showResume() {
+
+		return View::make("resume");
+	}
+
+	public function showPortfolio() {
+		// Return current route
+		$data = ['route' => Route::getCurrentRoute()->getPath()];
+		return View::make("portfolio")->with($data); 
+	}
+
+	public function sayHello($name)
+	{	
+	    if ($name == "Chris")
+	    {
+	        return Redirect::to('/');
+	    }
+	    else
+	    {
+	        return View::make('temp.my-first-view')->with('name', $name);
+	    }
 	}
 
 }
