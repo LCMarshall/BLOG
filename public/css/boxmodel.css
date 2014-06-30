@@ -1,0 +1,46 @@
+h1 {
+	font-weight: bold;
+}
+
+.box {
+      width: 150px;
+      height:50px;
+      padding:10px;
+      border: 1px solid black;
+      color: #fff;
+    }
+
+ #red {
+ 	background-color: #a52a2a;
+ 	
+ }  
+
+ #orange {
+ 	background-color: #ffa500;
+ 	margin: 10px 0px 0px 30px;
+ 
+ } 
+
+ #yellow {
+ 	background-color: #ffd700;
+ 	margin: 10px 0px 0px 60px;
+
+ }
+
+ #green {
+	background-color: #6b8e23;
+	margin: 10px 0px 0px 90px;
+
+ }
+
+ #blue {
+ 	background-color: #0000cd;
+ 	margin: 10px 0px 0px 120px;
+
+ }
+
+ #purple {
+ 	background-color: #ba55d3;
+ 	margin: 10px 0px 0px 150px;
+
+ }

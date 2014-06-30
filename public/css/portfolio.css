@@ -1,0 +1,57 @@
+.box {
+      width: 400px;
+      height:60px;
+      padding:10px;
+      border: 1px;
+      position: relative;
+ }
+ 
+ h1 {
+ 	color: purple;
+ 	padding-bottom: 30px;
+ 	padding-left: 50px;
+ } 
+
+.pg1 {
+	padding-top: 60px;
+}
+
+      
+body {
+	background-image: url('/img/moulin.png');
+}
+ #box_1 {
+ 	background-image: url('/img/use_your_illusion.png');
+ }
+
+ #box_2 {
+ 	background-image: url('/img/dirty_old_shirt.png');
+ } 
+
+ #resume {
+ 	background-image: url('/img/resume_sample.jpeg');
+ }
+#blog {
+	background-image: url('/img/blog_image.jpeg');
+}
+#project1 {
+	background-image: url('/img/eat_safe.png');
+	background-size: cover;
+	background-position: center;
+}
+#prof_img{
+	background-image: url('/img/professional.jpg');
+	background-size: cover;
+	background-position: center;
+}
+
+.boxes div, .boxes a {
+ 	height: 300px;
+ 	padding: 30px;
+}
+
+#email {
+	text-align: center;
+	font-size: 20px;
+	padding-top: 80px;
+}

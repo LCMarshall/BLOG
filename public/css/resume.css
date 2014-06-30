@@ -1,0 +1,43 @@
+body {
+	background-image: url('/img/extra_clean_paper.png');
+	font-family: "times new roman";
+}
+
+.box {
+      width: 400px;
+      height:60px;
+      padding:10px;
+      border: 1px;
+      position: relative;
+ }
+
+h1 {
+ 	color: black;
+ 	padding-bottom: 30px;
+ 	padding-left: 10px;
+ 	font-family: "times new roman";
+ } 
+
+h3 {
+	color: black;
+	font-family: "times new roman";
+}
+
+#box {
+	padding-left:30px;
+}
+
+p { 
+	color: #008B8B;
+	font-family: "times new roman";
+}
+
+ul, li{
+	color: #008B8B;
+	font-family: "times new roman";
+}
+
+h5 {
+	color: #6495ED;
+	font-family: "times new roman";
+}
