@@ -46,14 +46,15 @@ Lori Contreras Marshall
                   <li>jQuery</li>
                   <li>HTML</li>
                   <li>CSS</li>
+                  <li>Twitter Bootstrap</li>
                   <li>GitHub</li>
               </ul>  
             <h3>Student Projects</h3>
-            <ul>
+            <ul class="project">
               <li>Portfolio and Blog: Created a professional portfolio and blog utilizing PHP, 
                 JavaScript, jQuery, MySQL, and the Laravel framework. Functionality includes the capability
                 to create a blog post, delete a blog post, and update as well as the ability to comment.</li>
-              <li>Guac-A-Mole: Utilized PHP, JavaScript, and jQuery to create
+              <li >Guac-A-Mole: Utilized PHP, JavaScript, and jQuery to create
                 a game based on the classic Whack-A-Mole game. The functionality of the
                 game included the ability to start with the click of a button, stop via 
                 a timer, and the capacity to keep score.</li>
@@ -80,16 +81,39 @@ Lori Contreras Marshall
             <h3>Work Experience</h3>
             <p></p>
             <p>Freelance Web Developer</p>
-            <p>Job 3</p>
-            <p>Job 4</p>
+            <p><em>May 2014-Present</em></p>
+              Created websites for small businesses, working on the entire process of web development, 
+              including planning, designing/developing, troubleshooting, 
+              debugging and implementing software code for website components.
+              <br>
+              <br>
 
+            <p>John Paul Stevens High School</p>
+            <p><em>San Antonio, TX, August 2009-December 2013</em></p>
 
+              Developed and implemented differentiated instruction that encouraged critical thinking,  
+              Tracked and analyzed student performance,          
+              Created opportunities for peer teaching and cooperative learning, 
+              Conducted conferences with students, parents, other teachers, and staff to ensure student success,              
+              Increased number of students participating in the college readiness assessment from the lowest in the district to the third highest in the district,
+              Interviewed students and coordinated testing to ensure specific requirements were met,
+              Coordinated all pertinent data and information with Northwest Vista College and the University of Texas at San Antonio to ensure students were properly entered and enrolled into each program,
+              Created and prepared reports for internal and external use,
+              Conducted parent information sessions,
+              New Teacher Campus Mentor,
+              Organized duty schedules,
+              Developed and facilitated staff development,
+              Organized and launched after school peer tutoring program,
+              Encouraged technology in learning
+             
           </div>
             
         </div>  
         <div class="row boxes">
           <div class="col-md-4"></div>
+          <p></p><br>
           <div class="col-md-8"></div>
+          <p></p><br>
         </div>
     </div> 
 @stop       

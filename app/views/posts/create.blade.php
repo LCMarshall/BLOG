@@ -1,11 +1,15 @@
 @extends('layouts.master')
 
 @section('title')
-Create a Post
+	Create a Post
 @stop
 
 @section('content')
-<form method="POST" action={{{ action('PostsController@store') }}}>
+	@if ($errors->has('title'))
+		{{ $errors->first('title', '<span class="help-block">:message</span><br>') }}
+		{{ $errors->first('body', '<span class="help-block">:message</span><br>') }}
+	@endif	
+	<form method="POST" action={{{ action('PostsController@store') }}}>
 		    <p>
 		    	<label for="title">Post Title:</label>
 		    	<input type="text" id="title" name="title" 

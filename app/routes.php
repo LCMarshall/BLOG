@@ -17,6 +17,24 @@ Route::resource('posts', 'PostsController');
 Route::get('resume', 'HomeController@showResume');
 Route::get('portfolio', 'HomeController@showPortfolio');
 
+Route::get('/orm-test', function () {
+    // $posts = Post::all();
+
+    // foreach ($posts as $post) {
+        // echo $post->title . "<br>";
+        // echo $post->body . "<br>";
+
+    $post = Post::find(1);
+
+    $post->delete();
+    // $post->title = "New Title Goes Here.";
+    // $post->save();
+    // return $post;
+    // }
+    // return "eloquent ORM";
+});
+
+
 // 
 // Route::get('/resume', function()
 // {
