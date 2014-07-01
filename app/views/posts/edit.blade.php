@@ -5,12 +5,9 @@
 @stop
 
 @section('content')
-	@if ($errors->has('title'))
-		{{ $errors->first('title', '<span class="help-block">:message</span><br>') }}
-		{{ $errors->first('body', '<span class="help-block">:message</span><br>') }}
-	@endif	
 
-	{{ Form::open(array('action'=>'PostsController@store')) }}
+	{{ Form::model($post, array('action' => array('PostsController@update', $post->id), 'method' => 'PUT')) }}
+
 	
 		{{ Form::label('title', 'Title') }}		
 		{{ Form::text('title') }}

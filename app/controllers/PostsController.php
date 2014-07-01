@@ -32,6 +32,7 @@ class PostsController extends \BaseController {
 	 */
 	public function store()
 	{
+
 		$validator = Validator::make(Input::all(), Post::$rules);
 
 		if ($validator->fails()) {
@@ -70,7 +71,9 @@ class PostsController extends \BaseController {
 	 */
 	public function edit($id)
 	{
-		return "I edit all the posts";
+    	$post = Post::find($id);
+		return View::make('posts.edit')->with('post', $post);
+
 	}
 
 
@@ -82,7 +85,11 @@ class PostsController extends \BaseController {
 	 */
 	public function update($id)
 	{
-		
+		$post = Post::find($id);
+		$post->title = Input::get("title");
+		$post->body = Input::get("body");
+		$post->save();
+		return Redirect::action('PostsController@index');
 	}
 
 
